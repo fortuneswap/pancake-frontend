@@ -117,7 +117,7 @@ const PredictionPromotionCard = () => {
   return (
     <StyledPredictionCard>
       <CardBody>
-        <PredictionLive mb="24px">{t('Predictions Now Live')}</PredictionLive>
+        <PredictionLive mb="24px">{t('Airdrop Now Live')}</PredictionLive>
         <PredictionOver bold color="#7645d9">
           {over}
         </PredictionOver>
@@ -136,7 +136,7 @@ const PredictionPromotionCard = () => {
           *{t('Beta Version')}
         </Text>
         <Link href="https://pancakeswap.finance/prediction" id="homepage-prediction-cta">
-          <Button px={['14px', null, null, null, '20px']}>
+          <Button px={['14px', null, null, null, '20px']} variant="danger">
             <PredictionTryNow>
               <Text color="white" bold fontSize="16px">
                 {t('Try Now')}

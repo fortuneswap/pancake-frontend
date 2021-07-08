@@ -19,6 +19,9 @@ const GlobalStyle = createGlobalStyle`
       max-width: 100%;
     }
   }
+  [aria-label="Pancake home page"], [aria-label="Twitter"], [href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82"] {
+    display: none;
+  }
 `
 
 export default GlobalStyle
