@@ -22,27 +22,22 @@ const Row = styled.div`
 
 const CakeStats = () => {
   const { t } = useTranslation()
-  const totalSupply = useTotalSupply()
-  const burnedBalance = getBalanceNumber(useBurnedBalance(getCakeAddress()))
-  const cakeSupply = totalSupply ? getBalanceNumber(totalSupply) - burnedBalance : 0
+  const totalSupply = 1000000000
+  const burnedBalance = 0
 
   return (
     <StyledCakeStats>
       <CardBody>
         <Heading scale="xl" mb="24px">
-          {t('Cake Stats')}
+          {t('Fortune Stats')}
         </Heading>
         <Row>
-          <Text fontSize="14px">{t('Total CAKE Supply')}</Text>
-          {cakeSupply && <CardValue fontSize="14px" value={cakeSupply} />}
+          <Text fontSize="14px">{t('Total FORTUNE Supply')}</Text>
+          {totalSupply && <CardValue fontSize="14px" value={totalSupply} />}
         </Row>
         <Row>
-          <Text fontSize="14px">{t('Total CAKE Burned')}</Text>
+          <Text fontSize="14px">{t('Total FORTUNE Burned')}</Text>
           <CardValue fontSize="14px" decimals={0} value={burnedBalance} />
-        </Row>
-        <Row>
-          <Text fontSize="14px">{t('New CAKE/block')}</Text>
-          <CardValue fontSize="14px" decimals={0} value={20} />
         </Row>
       </CardBody>
     </StyledCakeStats>

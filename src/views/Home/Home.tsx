@@ -6,10 +6,7 @@ import Page from 'components/layout/Page'
 import FarmStakingCard from 'views/Home/components/FarmStakingCard'
 import CakeStats from 'views/Home/components/CakeStats'
 import TotalValueLockedCard from 'views/Home/components/TotalValueLockedCard'
-import EarnAPRCard from 'views/Home/components/EarnAPRCard'
-import EarnAssetCard from 'views/Home/components/EarnAssetCard'
 import PredictionPromotionCard from './components/PredictionPromotionCard'
-import WinCard from './components/WinCard'
 
 const Hero = styled.div`
   align-items: center;
@@ -95,8 +92,8 @@ const Home: React.FC = () => {
       </Hero>
       <div>
         <Cards>
-          <FarmStakingCard />
           <PredictionPromotionCard />
+          <FarmStakingCard />
         </Cards>
         <Cards>
           <CakeStats />

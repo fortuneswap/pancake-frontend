@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from 'react'
 import styled from 'styled-components'
-import { Heading, Card, CardBody, Button } from '@pancakeswap/uikit'
+import { Heading, Card, CardBody, Button, Text } from '@pancakeswap/uikit'
 import { harvestFarm } from 'utils/calls'
 import { useWeb3React } from '@web3-react/core'
 import { useTranslation } from 'contexts/Localization'
@@ -12,7 +12,9 @@ import CakeHarvestBalance from './CakeHarvestBalance'
 import CakeWalletBalance from './CakeWalletBalance'
 
 const StyledFarmStakingCard = styled(Card)`
-  background-image: url('/images/cake-bg.svg');
+  background-image: url('/favicon.png');
+  opacity: 0.8;
+  background-size: 150px;
   background-repeat: no-repeat;
   background-position: top right;
   min-height: 376px;
@@ -62,34 +64,22 @@ const FarmedStakingCard = () => {
     <StyledFarmStakingCard>
       <CardBody>
         <Heading scale="xl" mb="24px">
-          {t('Farms & Staking')}
+          {t('Private Sale')}
         </Heading>
-        <CardImage src="/images/cake.svg" alt="cake logo" width={64} height={64} />
         <Block>
-          <Label>{t('CAKE to Harvest')}:</Label>
-          <CakeHarvestBalance farmsWithBalance={balancesWithValue} />
-        </Block>
-        <Block>
-          <Label>{t('CAKE in Wallet')}:</Label>
-          <CakeWalletBalance />
+          <Heading scale="md" color="red" mb="24px">
+            {t('Coming Soon')}
+          </Heading>
         </Block>
         <Actions>
-          {account ? (
             <Button
               id="harvest-all"
-              disabled={balancesWithValue.length <= 0 || pendingTx}
+              disabled={0 < 1}
               onClick={harvestAllFarms}
               width="100%"
             >
-              {pendingTx
-                ? t('Collecting CAKE')
-                : t('Harvest all (%count%)', {
-                    count: balancesWithValue.length,
-                  })}
+            {t('Whitelist')}
             </Button>
-          ) : (
-            <UnlockButton width="100%" />
-          )}
         </Actions>
       </CardBody>
     </StyledFarmStakingCard>
