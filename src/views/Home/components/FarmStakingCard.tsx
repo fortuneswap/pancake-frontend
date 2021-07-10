@@ -67,9 +67,12 @@ const FarmedStakingCard = () => {
           {t('Private Sale')}
         </Heading>
         <Block>
-          <Heading scale="md" color="red" mb="24px">
+          <Heading scale="md" color="red" mb="150px">
             {t('Coming Soon')}
           </Heading>
+        </Block>
+        <Block>
+          <Label>{t('Open at:')}</Label>
         </Block>
         <Actions>
             <Button

@@ -14,36 +14,39 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
       {
         label: t('Exchange'),
         href: 'https://exchange.pancakeswap.finance/#/swap',
-        status: {
-          text: t('Soon').toLocaleUpperCase(),
-          color: 'success',
-        },
       },
       {
         label: t('Liquidity'),
         href: 'https://exchange.pancakeswap.finance/#/pool',
-
-        status: {
-          text: t('Soon').toLocaleUpperCase(),
-          color: 'success',
-        },
       },
     ],
   },
   {
     label: t('Farms'),
     icon: 'FarmIcon',
-    href: '/farms',
+    href: '/#',
+    status: {
+      text: t('Soon').toLocaleUpperCase(),
+      color: 'success',
+    },
   },
   {
     label: t('Pools'),
     icon: 'PoolIcon',
-    href: '/pools',
+    href: '/#',
+    status: {
+      text: t('Soon').toLocaleUpperCase(),
+      color: 'success',
+    },
   },
   {
     label: t('Info'),
     icon: 'InfoIcon',
-    href: 'https://pancakeswap.info',
+    href: '/#',
+    status: {
+      text: t('Soon').toLocaleUpperCase(),
+      color: 'success',
+    },
   },
   {
     label: t('More'),
