@@ -15,13 +15,14 @@ const Menu = (props) => {
   const cakePriceUsd = usePriceCakeBusd()
   const { profile } = useProfile()
   const { currentLanguage, setLanguage, t } = useTranslation()
+  const dark = true
 
   return (
     <UikitMenu
       account={account}
       login={login}
       logout={logout}
-      isDark={isDark}
+      isDark={dark}
       toggleTheme={toggleTheme}
       currentLang={currentLanguage.code}
       langs={languageList}

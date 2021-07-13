@@ -34,22 +34,22 @@ const TotalValueLockedCard = () => {
         </Heading>
         <SocialLink>
           <Link href="/#">
-            <Text color="secondary" bold fontSize="48px" mr="15px">
+            <Text bold fontSize="40px" mr="15px">
               <FontAwesomeIcon icon={['fab', 'telegram']} />
             </Text>
           </Link>
           <Link href="/#">
-            <Text color="secondary" bold fontSize="48px" mr="15px">
+            <Text bold fontSize="40px" mr="15px">
               <FontAwesomeIcon icon={['fab', 'twitter']} />
             </Text>
           </Link>
           <Link href="/#">
-            <Text color="secondary" bold fontSize="48px" mr="15px">
+            <Text bold fontSize="40px" mr="15px">
               <FontAwesomeIcon icon={['fab', 'medium']} />
             </Text>
           </Link>
           <Link href="/#">
-            <Text color="secondary" bold fontSize="48px">
+            <Text bold fontSize="40px">
               <FontAwesomeIcon icon={['fab', 'github']} />
             </Text>
           </Link>

@@ -95,7 +95,7 @@ const PredictionPromotionCard = () => {
     <StyledPredictionCard>
       <CardBody>
         <PredictionLive mb="24px">{t('Airdrop Now Live')}</PredictionLive>
-        <PredictionWon mb="24px" color="#7645d9" bold decimals={0} value={100000000} />
+        <PredictionWon mb="24px" color="#ED4B9E" bold decimals={0} value={100000000} />
         <PredictionBNBSoFar bold mb="24px">
           {t('FORTUNE Token')}
         </PredictionBNBSoFar>

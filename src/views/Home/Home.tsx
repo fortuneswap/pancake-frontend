@@ -7,6 +7,8 @@ import FarmStakingCard from 'views/Home/components/FarmStakingCard'
 import CakeStats from 'views/Home/components/CakeStats'
 import TotalValueLockedCard from 'views/Home/components/TotalValueLockedCard'
 import PredictionPromotionCard from './components/PredictionPromotionCard'
+import Roadmap from './components/Roadmap'
+import RoadmapLayout from './components/RoadmapLayout'
 
 const Hero = styled.div`
   align-items: center;
@@ -100,6 +102,7 @@ const Home: React.FC = () => {
           <TotalValueLockedCard />
         </Cards>
       </div>
+    <Roadmap />
     </Page>
   )
 }
