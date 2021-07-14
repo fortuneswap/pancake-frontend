@@ -8,6 +8,7 @@ import useRefresh from 'hooks/useRefresh'
 import Balance from '../../../components/Balance'
 
 const StyledPredictionCard = styled(Card)`
+  background-color: rgb(39, 38, 44);
   background-image: url('/images/Rocket-PNG-File.png');
   background-repeat: no-repeat;
   background-position: bottom right;
@@ -23,6 +24,7 @@ const StyledPredictionCard = styled(Card)`
 `
 
 const PredictionLive = styled(Text)`
+  color: rgb(244, 238, 255);
   font-size: 28px;
   line-height: 1.1;
   font-weight: 600;
@@ -43,6 +45,7 @@ const PredictionWon = styled(Balance)`
 
 
 const PredictionBNBSoFar = styled(Text)`
+  color: rgb(244, 238, 255);
   font-size: 22px;
   line-height: 1.1;
   font-weight: 600;

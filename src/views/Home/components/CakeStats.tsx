@@ -8,6 +8,7 @@ import { getCakeAddress } from 'utils/addressHelpers'
 import CardValue from './CardValue'
 
 const StyledCakeStats = styled(Card)`
+  background-color: rgb(39, 38, 44);
   margin-left: auto;
   margin-right: auto;
 `
@@ -28,15 +29,15 @@ const CakeStats = () => {
   return (
     <StyledCakeStats>
       <CardBody>
-        <Heading scale="xl" mb="24px">
+        <Heading scale="xl" mb="24px" color="rgb(244, 238, 255)">
           {t('Fortune Stats')}
         </Heading>
         <Row>
-          <Text fontSize="14px">{t('Total FORTUNE Supply')}</Text>
+          <Text fontSize="14px" color="rgb(244, 238, 255)">{t('Total FORTUNE Supply')}</Text>
           {totalSupply && <CardValue fontSize="14px" value={totalSupply} />}
         </Row>
         <Row>
-          <Text fontSize="14px">{t('Total FORTUNE Burned')}</Text>
+          <Text fontSize="14px" color="rgb(244, 238, 255)">{t('Total FORTUNE Burned')}</Text>
           <CardValue fontSize="14px" decimals={0} value={burnedBalance} />
         </Row>
       </CardBody>

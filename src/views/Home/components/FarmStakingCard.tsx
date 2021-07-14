@@ -12,6 +12,7 @@ import CakeHarvestBalance from './CakeHarvestBalance'
 import CakeWalletBalance from './CakeWalletBalance'
 
 const StyledFarmStakingCard = styled(Card)`
+  background-color: rgb(39, 38, 44);
   background-image: url('/favicon.png');
   opacity: 0.8;
   background-size: 150px;
@@ -63,7 +64,7 @@ const FarmedStakingCard = () => {
   return (
     <StyledFarmStakingCard>
       <CardBody>
-        <Heading scale="xl" mb="24px">
+        <Heading scale="xl" mb="24px" color="rgb(244, 238, 255)">
           {t('Private Sale')}
         </Heading>
         <Block>
@@ -72,7 +73,7 @@ const FarmedStakingCard = () => {
           </Heading>
         </Block>
         <Block>
-          <Label>{t('Open at:')}</Label>
+          <Label color="rgb(244, 238, 255)">{t('Open at:')}</Label>
         </Block>
         <Actions>
             <Button
