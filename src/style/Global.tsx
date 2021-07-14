@@ -32,7 +32,7 @@ const GlobalStyle = createGlobalStyle`
     background-color: rgb(39, 38, 44);
   }
 
-  nav > div:nth-child(1) > button[aria-label="Toggle menu"] > svg, #root > div:nth-child(1) > div > div:nth-child(1) > div:nth-child(1) > div > a > svg {
+  nav > div:nth-child(1) > button[aria-label="Toggle menu"] > svg, #root > div:nth-child(1) > div > div:nth-child(1) > div:nth-child(1) > div > a > svg, #root > div:nth-child(1) > div > div:nth-child(1) > div:nth-child(1) > div > div:nth-child(1) > svg {
     fill: rgb(184, 173, 210);
   }
 
