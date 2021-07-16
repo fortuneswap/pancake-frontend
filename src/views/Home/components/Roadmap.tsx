@@ -88,11 +88,11 @@ const Roadmap = () => {
         return (
           <CardBody>
             <Heading as="h4" color="secondary" mb="16px">
-              {t('Claim your tokens and achievement')}
+              {t('Later')}
             </Heading>
             <Text color="rgb(244, 238, 255)" small>
               {t(
-                'After the IFO sales finish, you can claim any IFO tokens that you bought, and any unspent CAKE-BNB LP tokens will be returned to your wallet.',
+                'More updates soon.',
               )}
             </Text>
           </CardBody>
@@ -124,6 +124,9 @@ const Roadmap = () => {
           </Step>
           <Step key={3} index={3} status="future">
             <StyledCard mb="20px">{renderCardBody(3)}</StyledCard>
+          </Step>
+          <Step key={4} index={4} status="future">
+            <StyledCard mb="20px">{renderCardBody(4)}</StyledCard>
           </Step>
           
       </Block>
