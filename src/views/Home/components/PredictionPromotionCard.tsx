@@ -104,7 +104,7 @@ const PredictionPromotionCard = () => {
         <PredictionLive mb="24px">{t('Airdrop Now Live')}</PredictionLive>
         <PredictionWon mb="24px" color="rgb(255, 213, 35)" bold decimals={0} value={100000000} />
         <PredictionBNBSoFar bold mb="24px">
-          {t('COFFEE Token')}
+          {t('MOCCA Token')}
         </PredictionBNBSoFar>
         <Link href="https://pancakeswap.finance/prediction" id="homepage-prediction-cta">
           <JoinButton px={['14px', null, null, null, '20px']}>
