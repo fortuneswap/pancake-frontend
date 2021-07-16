@@ -13,7 +13,7 @@ import CakeWalletBalance from './CakeWalletBalance'
 
 const StyledFarmStakingCard = styled(Card)`
   background-color: rgb(39, 38, 44);
-  background-image: url('/favicon.png');
+  background-image: url('/images/logo.png');
   opacity: 0.8;
   background-size: 150px;
   background-repeat: no-repeat;

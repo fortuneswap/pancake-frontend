@@ -37,7 +37,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .step > div > div:nth-child(2) >div {
-    background-color: #ED4B9E;
+    background-color: rgb(255, 213, 35);
   }
 
   #root > div:nth-child(1) > div > div:nth-child(1) > div:nth-child(1) > div > a > div, #root > div:nth-child(1) > div > div:nth-child(1) > div:nth-child(1) > div > div:nth-child(1) > div, #root > div:nth-child(1) > div > div:nth-child(1) > div:nth-child(1) > div > div:nth-child(2) > div > a > div  {
@@ -49,25 +49,25 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .step > div > div:nth-child(3) > div > div > h4 {
-    color: #ED4B9E;
+    color: rgb(255, 213, 35);
   }
 
   .roadmap > h2 {
-    color: #ED4B9E;
+    color: rgb(255, 213, 35);
   }
 
   nav > div:nth-child(2) > div > button {
-    background-color: #ED4B9E;
+    background-color: rgb(255, 213, 35);
     color: white;
   }
 
   #root > div:nth-child(1) > div > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) {
-    box-shadow: inset 4px 0px 0px #ED4B9E;
+    box-shadow: inset 4px 0px 0px rgb(255, 213, 35);
   }
 
   [color="success"] {
-    border-color: #ED4B9E;
-    color: #ED4B9E;
+    border-color: rgb(255, 213, 35);
+    color: rgb(255, 213, 35);
   }
 `
 

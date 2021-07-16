@@ -87,8 +87,8 @@ const Home: React.FC = () => {
   return (
     <Page>
       <Hero>
-        <Heading as="h1" scale="xl" mb="24px" color="rgb(244, 238, 255)">
-          {t('FortuneSwap')}
+        <Heading as="h1" scale="xl" mb="24px" color="rgb(255, 213, 35)">
+          {t('MoccaSwap')}
         </Heading>
         <Text color="rgb(244, 238, 255)">{t('Decentralized trading protocol on Binance Smart Chain. Hardforking of pancakeswap')}</Text>
       </Hero>

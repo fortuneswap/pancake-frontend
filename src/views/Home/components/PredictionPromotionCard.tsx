@@ -64,6 +64,10 @@ const PredictionTryNow = styled(Flex)`
   }
 `
 
+const JoinButton = styled(Button)`
+  background: rgb(255, 213, 35);
+`
+
 const PredictionPromotionCard = () => {
   const { t } = useTranslation()
   const { slowRefresh } = useRefresh()
@@ -98,19 +102,19 @@ const PredictionPromotionCard = () => {
     <StyledPredictionCard>
       <CardBody>
         <PredictionLive mb="24px">{t('Airdrop Now Live')}</PredictionLive>
-        <PredictionWon mb="24px" color="#ED4B9E" bold decimals={0} value={100000000} />
+        <PredictionWon mb="24px" color="rgb(255, 213, 35)" bold decimals={0} value={100000000} />
         <PredictionBNBSoFar bold mb="24px">
-          {t('FORTUNE Token')}
+          {t('COFFEE Token')}
         </PredictionBNBSoFar>
         <Link href="https://pancakeswap.finance/prediction" id="homepage-prediction-cta">
-          <Button px={['14px', null, null, null, '20px']} variant="danger">
+          <JoinButton px={['14px', null, null, null, '20px']}>
             <PredictionTryNow>
               <Text color="white" bold fontSize="16px">
                 {t('Join Now')}
               </Text>
               <ArrowForwardIcon color="white" />
             </PredictionTryNow>
-          </Button>
+          </JoinButton>
         </Link>
       </CardBody>
     </StyledPredictionCard>
